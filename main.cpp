@@ -6,6 +6,6 @@ int main(){
   int **t = ct(M,N);
   input(t,M,N);
   output(t,M,N);
-  delet(t,M,N);
+  delet(t,M);
   std::cout << M << " " << N << "\n";
 }
