@@ -14,6 +14,12 @@ int main()
   try
   {
     matrix = createmtx(M,N);
+    if (!std::cin)
+    {
+      deletemtx(matrix,M);
+      std::cerr << "Input error\n";
+      return 1;
+    }
   }
   catch(const std::bad_alloc & e)
   {
