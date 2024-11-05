@@ -3,9 +3,9 @@
 
 #include <cstddef>
 
-void output(const int * const * matrix, size_t m, size_t n);
-int** createmtx(size_t m, size_t n);
-void input(int** matrix, size_t m, size_t n);
-void deletemtx(int** marix, size_t m);
+void outputMtx(std::ostream & out, const int * const * matrix, size_t m, size_t n);
+int** createMtx(size_t n, size_t m);
+void inputMtx(std::istream & in, int** matrix, size_t m, size_t n);
+void deleteMtx(int** matrix, size_t m);
 
 #endif
